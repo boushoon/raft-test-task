@@ -1,9 +1,6 @@
-import json
-
 from agents.base_agent import BaseAgent
-from utils.llm_client import call_llm
 
-SYSTEM_PROMPT = """
+system_prompt = """
 ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.
 Ты каерьерный советник.
 Твоя задача: на основе переданных навыков(skill_map) и таблицы вилок по грейдам и регионам(salary_table) составить структурированный карьерный план.
@@ -92,7 +89,5 @@ SYSTEM_PROMPT = """
 class CareerAdvisor(BaseAgent):
     """Карьерный советник"""
 
-    def run(self, input_data):
-        prompt = f"{json.dumps(input_data, ensure_ascii=False, indent=2)}"
-        result = call_llm(prompt, SYSTEM_PROMPT)
-        return result
+    def __init__(self):
+        super().__init__(name="CareerAdvisor", system_prompt=system_prompt)

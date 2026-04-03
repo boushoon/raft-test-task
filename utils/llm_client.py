@@ -3,6 +3,8 @@ import json
 import requests
 from dotenv import load_dotenv
 
+from utils.logger import get_logger
+
 load_dotenv()
 
 # Конфигурация
@@ -12,8 +14,11 @@ MODEL = os.getenv("MODEL")
 
 
 def call_llm(prompt: str, system_prompt: str) -> str:
+    logger = get_logger()
+
     url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"
 
+    logger.info("LLM: Устанавливаем заголовки запроса")
     headers = {
         "Authorization": f"Api-Key {API_KEY}",
         "Content-Type": "application/json"
@@ -33,8 +38,11 @@ def call_llm(prompt: str, system_prompt: str) -> str:
         "messages": messages
     }
 
+    logger.info("LLM: Отправка запроса")
     response = requests.post(url, headers=headers, json=body)
     result = response.json()
+
+    logger.info("LLM: Ответ получен, обрабатываем результат")
 
     # Достаём текст
     text = result["result"]["alternatives"][0]["message"]["text"].strip("`").strip()

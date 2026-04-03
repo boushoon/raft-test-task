@@ -1,9 +1,6 @@
-import json
-
 from agents.base_agent import BaseAgent
-from utils.llm_client import call_llm
 
-SYSTEM_PROMPT = """
+system_prompt = """
 ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.
 Ты оценщик зарплат.
 Твоя задача: на основе переданных навыков(skill_map) составить таблицу(salary_table) вилок по грейдам и регионам.
@@ -55,7 +52,5 @@ SYSTEM_PROMPT = """
 class SalaryAppraiser(BaseAgent):
     """Оценщик зарплат"""
 
-    def run(self, input_data):
-        prompt = f"{json.dumps(input_data, ensure_ascii=False, indent=2)}"
-        result = call_llm(prompt, SYSTEM_PROMPT)
-        return result
+    def __init__(self):
+        super().__init__(name="SalaryAppraiser", system_prompt=system_prompt)

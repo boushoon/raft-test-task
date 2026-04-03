@@ -1,6 +1,8 @@
 import json
 import os
 
+from utils.logger import get_logger
+
 
 def generate_markdown(report, role):
     # Заголовок и время генерации
@@ -141,15 +143,18 @@ def generate_markdown(report, role):
     return md
 
 
-def save_report(report, role):
-    os.makedirs("reports", exist_ok=True)  # Создаем директорию reports
+def save_report(report, role, directory="reports"):
+    logger = get_logger()
+    os.makedirs(f"{directory}", exist_ok=True)  # Создаем директорию reports
 
     # Сохраняем JSON
-    json_path = f"reports/report.json"
+    json_path = f"{directory}/report.json"
     with open(json_path, "w", encoding="utf-8") as f:
         json.dump(report, f, ensure_ascii=False, indent=2)
+    logger.info(f"Report: Отчет в формате JSON сохранен: {json_path}")
 
     # Сохраняем MD
-    md_path = f"reports/report.md"
+    md_path = f"{directory}/report.md"
     with open(md_path, "w", encoding="utf-8") as f:
         f.write(generate_markdown(report, role))
+    logger.info(f"Report: Отчет в формате MD сохранен: {md_path}")

@@ -1,9 +1,6 @@
-import json
-
 from agents.base_agent import BaseAgent
-from utils.llm_client import call_llm
 
-SYSTEM_PROMPT = """
+system_prompt = """
 ОТВЕЧАЙ ТОЛЬКО НА РУССКОМ ЯЗЫКЕ.
 Ты - опытный аналитик рынка. 
 
@@ -43,8 +40,5 @@ SYSTEM_PROMPT = """
 class MarketAnalyst(BaseAgent):
     """Аналитик рынка"""
 
-    def run(self, input_data):
-        prompt = f"{json.dumps(input_data, ensure_ascii=False, indent=2)}"
-        result = call_llm(prompt, SYSTEM_PROMPT)
-        return result
-
+    def __init__(self):
+        super().__init__(name="MarketAnalyst", system_prompt=system_prompt)
