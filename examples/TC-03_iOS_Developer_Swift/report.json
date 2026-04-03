@@ -1,0 +1,260 @@
+{
+  "generated_at": "2026-04-04T02:44:13.677226Z",
+  "skill_map": {
+    "languages": [
+      {
+        "name": "Swift",
+        "demand": "critical",
+        "trend": "growing"
+      },
+      {
+        "name": "Objective-C",
+        "demand": "important",
+        "trend": "declining"
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "UIKit",
+        "demand": "critical",
+        "trend": "stable"
+      },
+      {
+        "name": "SwiftUI",
+        "demand": "important",
+        "trend": "growing"
+      },
+      {
+        "name": "Combine",
+        "demand": "important",
+        "trend": "growing"
+      }
+    ],
+    "infrastructure": [
+      {
+        "name": "Xcode",
+        "demand": "critical",
+        "trend": "stable"
+      },
+      {
+        "name": "Cocoapods",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Carthage",
+        "demand": "nice-to-have",
+        "trend": "declining"
+      },
+      {
+        "name": "Git",
+        "demand": "critical",
+        "trend": "stable"
+      }
+    ],
+    "soft_skills": [
+      {
+        "name": "Коммуникативные навыки",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Умение работать в команде",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Проблемное мышление",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Самообучение",
+        "demand": "critical",
+        "trend": "growing"
+      }
+    ]
+  },
+  "salary_table": {
+    "Junior": {
+      "Москва": {
+        "min": 80,
+        "median": 100,
+        "max": 120
+      },
+      "Регионы РФ": {
+        "min": 60,
+        "median": 85,
+        "max": 110
+      },
+      "Remote USD": {
+        "min": 1500,
+        "median": 2000,
+        "max": 3000
+      }
+    },
+    "Middle": {
+      "Москва": {
+        "min": 130,
+        "median": 160,
+        "max": 210
+      },
+      "Регионы РФ": {
+        "min": 90,
+        "median": 140,
+        "max": 180
+      },
+      "Remote USD": {
+        "min": 2500,
+        "median": 3500,
+        "max": 4500
+      }
+    },
+    "Senior": {
+      "Москва": {
+        "min": 200,
+        "median": 250,
+        "max": 320
+      },
+      "Регионы РФ": {
+        "min": 150,
+        "median": 220,
+        "max": 280
+      },
+      "Remote USD": {
+        "min": 4000,
+        "median": 5500,
+        "max": 7000
+      }
+    },
+    "Lead": {
+      "Москва": {
+        "min": 300,
+        "median": 420,
+        "max": 500
+      },
+      "Регионы РФ": {
+        "min": 230,
+        "median": 330,
+        "max": 430
+      },
+      "Remote USD": {
+        "min": 6500,
+        "median": 8500,
+        "max": 10500
+      }
+    }
+  },
+  "market_trend": "growing",
+  "market_trend_reason": "Спрос на разработчиков под iOS растёт из-за увеличения числа мобильных приложений и необходимости их поддержки и развития.",
+  "top_employers": [
+    "Яндекс",
+    "Сбер",
+    "Mail.ru Group",
+    "Rambler Group",
+    "Тинькофф"
+  ],
+  "learning_path": {
+    "Foundation": {
+      "topics": [
+        "Swift",
+        "UIKit",
+        "Xcode",
+        "Git"
+      ],
+      "resources": [
+        {
+          "title": "The Swift Programming Language",
+          "type": "книга",
+          "url": "https://docs.swift.org/swift-book/"
+        },
+        {
+          "title": "iOS Basics from Apple",
+          "type": "курс",
+          "url": "https://developer.apple.com/tutorials/swiftui"
+        },
+        {
+          "title": "Xcode User Guide",
+          "type": "документация",
+          "url": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_overview/index.html"
+        }
+      ],
+      "milestone": "Понимание основ языка Swift, умение работать с UIKit, настройка рабочей среды в Xcode, базовые навыки работы с Git"
+    },
+    "Practice": {
+      "topics": [
+        "SwiftUI",
+        "Combine",
+        "Cocoapods"
+      ],
+      "resources": [
+        {
+          "title": "SwiftUI Tutorials",
+          "type": "курс",
+          "url": "https://developer.apple.com/tutorials/swiftui"
+        },
+        {
+          "title": "Combine Essentials",
+          "type": "курс",
+          "url": "https://www.hackingwithswift.com/books/ios-swiftui/combine"
+        },
+        {
+          "title": "Cocoapods Official Documentation",
+          "type": "документация",
+          "url": "https://cocoapods.org/"
+        }
+      ],
+      "milestone": "Умение создавать приложения с использованием SwiftUI, работа с Combine для асинхронного программирования, интеграция сторонних библиотек через Cocoapods"
+    },
+    "Portfolio": {
+      "topics": [
+        "Objective-C",
+        "Git"
+      ],
+      "resources": [
+        {
+          "title": "Programming in Objective-C",
+          "type": "книга",
+          "url": "https://www.amazon.com/Programming-Objective-C-Stephen-G-Kochan/dp/0134679356"
+        },
+        {
+          "title": "Pro Git",
+          "type": "книга",
+          "url": "https://git-scm.com/book/en/v2"
+        }
+      ],
+      "milestone": "Разработка полноценного приложения на Swift с использованием UIKit или SwiftUI, демонстрация навыков работы с Git и версиями проектов"
+    }
+  },
+  "gap_analysis": {
+    "quick_wins": [
+      "Swift",
+      "Xcode",
+      "Git",
+      "Коммуникативные навыки",
+      "Умение работать в команде"
+    ],
+    "long_term": [
+      "UIKit",
+      "SwiftUI",
+      "Combine",
+      "Cocoapods"
+    ]
+  },
+  "portfolio_project": {
+    "name": "iOS Weather App",
+    "description": "Разработка приложения для отображения погоды с использованием API OpenWeatherMap. Приложение использует SwiftUI для интерфейса и Combine для обработки асинхронных данных. Реализована интеграция с Git для управления версиями проекта.",
+    "skills_demonstrated": [
+      "Swift",
+      "SwiftUI",
+      "Combine",
+      "Git"
+    ]
+  },
+  "quality_score": 90,
+  "reason_score": "План обучения и карьерный план в целом хорошо структурированы и соответствуют навыкам из skill_map. Однако в разделе Portfolio в learning_path упоминается Objective-C, который имеет тренд declining и не рекомендуется для изучения.",
+  "warnings": [
+    "В разделе Portfolio в learning_path упоминается Objective-C, который имеет тренд declining и не рекомендуется для изучения."
+  ],
+  "is_consistent": true
+}

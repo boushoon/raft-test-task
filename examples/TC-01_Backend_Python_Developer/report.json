@@ -1,0 +1,294 @@
+{
+  "generated_at": "2026-04-04T02:40:13.901613Z",
+  "skill_map": {
+    "languages": [
+      {
+        "name": "Python",
+        "demand": "critical",
+        "trend": "stable"
+      },
+      {
+        "name": "SQL",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "NoSQL",
+        "demand": "important",
+        "trend": "growing"
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "Django",
+        "demand": "critical",
+        "trend": "stable"
+      },
+      {
+        "name": "Flask",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "FastAPI",
+        "demand": "important",
+        "trend": "growing"
+      }
+    ],
+    "infrastructure": [
+      {
+        "name": "Docker",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Kubernetes",
+        "demand": "important",
+        "trend": "growing"
+      },
+      {
+        "name": "AWS",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Google Cloud",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Azure",
+        "demand": "important",
+        "trend": "stable"
+      }
+    ],
+    "soft_skills": [
+      {
+        "name": "Коммуникативные навыки",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Умение работать в команде",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Проблемное мышление",
+        "demand": "important",
+        "trend": "stable"
+      },
+      {
+        "name": "Самообучение",
+        "demand": "important",
+        "trend": "growing"
+      },
+      {
+        "name": "Управление временем",
+        "demand": "nice-to-have",
+        "trend": "stable"
+      }
+    ]
+  },
+  "salary_table": {
+    "Junior": {
+      "Москва": {
+        "min": 80,
+        "median": 100,
+        "max": 120
+      },
+      "Регионы РФ": {
+        "min": 60,
+        "median": 85,
+        "max": 110
+      },
+      "Remote USD": {
+        "min": 1500,
+        "median": 2000,
+        "max": 3000
+      }
+    },
+    "Middle": {
+      "Москва": {
+        "min": 130,
+        "median": 160,
+        "max": 210
+      },
+      "Регионы РФ": {
+        "min": 90,
+        "median": 140,
+        "max": 180
+      },
+      "Remote USD": {
+        "min": 2500,
+        "median": 3500,
+        "max": 4500
+      }
+    },
+    "Senior": {
+      "Москва": {
+        "min": 220,
+        "median": 270,
+        "max": 330
+      },
+      "Регионы РФ": {
+        "min": 170,
+        "median": 230,
+        "max": 290
+      },
+      "Remote USD": {
+        "min": 4000,
+        "median": 5500,
+        "max": 7000
+      }
+    },
+    "Lead": {
+      "Москва": {
+        "min": 320,
+        "median": 400,
+        "max": 500
+      },
+      "Регионы РФ": {
+        "min": 260,
+        "median": 340,
+        "max": 420
+      },
+      "Remote USD": {
+        "min": 6500,
+        "median": 8500,
+        "max": 10500
+      }
+    }
+  },
+  "market_trend": "stable",
+  "market_trend_reason": "Спрос на разработчиков с навыками в области Python, SQL, NoSQL и соответствующих фреймворков остаётся стабильным благодаря широкому применению этих технологий в различных отраслях.",
+  "top_employers": [
+    "Яндекс",
+    "Сбер",
+    "Тинькофф",
+    "Mail.ru Group",
+    "Rambler Group"
+  ],
+  "learning_path": {
+    "Foundation": {
+      "topics": [
+        "Python",
+        "SQL",
+        "Основы Django",
+        "Основы Flask"
+      ],
+      "resources": [
+        {
+          "title": "Python Crash Course",
+          "type": "книга",
+          "url": "https://www.amazon.com/Python-Crash-Course-2nd-Edition/dp/1593279280"
+        },
+        {
+          "title": "Learn SQL",
+          "type": "курс",
+          "url": "https://www.codecademy.com/learn/learn-sql"
+        },
+        {
+          "title": "Django Girls Tutorial",
+          "type": "документация",
+          "url": "https://tutorial.djangogirls.org/en/"
+        },
+        {
+          "title": "Flask Mega Tutorial",
+          "type": "курс",
+          "url": "https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world"
+        }
+      ],
+      "milestone": "Умение писать простые приложения на Python с использованием Django и Flask, работать с SQL базами данных"
+    },
+    "Practice": {
+      "topics": [
+        "NoSQL",
+        "FastAPI",
+        "Docker"
+      ],
+      "resources": [
+        {
+          "title": "NoSQL Distilled",
+          "type": "книга",
+          "url": "https://www.amazon.com/NoSQL-Distilled-Pragmatic-Guide-Databases/dp/0321826620"
+        },
+        {
+          "title": "FastAPI Tutorial",
+          "type": "курс",
+          "url": "https://fastapi.tiangolo.com/"
+        },
+        {
+          "title": "Docker: Up and Running",
+          "type": "книга",
+          "url": "https://www.amazon.com/Docker-Up-Running-Developing-Shipping/dp/149191787X"
+        }
+      ],
+      "milestone": "Умение разрабатывать и деплоить приложения с использованием NoSQL баз данных, FastAPI и Docker"
+    },
+    "Portfolio": {
+      "topics": [
+        "Kubernetes",
+        "AWS",
+        "Google Cloud",
+        "Azure"
+      ],
+      "resources": [
+        {
+          "title": "Kubernetes in Action",
+          "type": "книга",
+          "url": "https://www.amazon.com/Kubernetes-Action-Marko-Ljubojevic/dp/1617295208"
+        },
+        {
+          "title": "AWS Certified Solutions Architect – Associate",
+          "type": "курс",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+        },
+        {
+          "title": "Google Cloud Platform Fundamentals",
+          "type": "курс",
+          "url": "https://cloud.google.com/certifications/cloud-digital-leader"
+        },
+        {
+          "title": "Microsoft Azure Fundamentals",
+          "type": "курс",
+          "url": "https://learn.microsoft.com/en-us/certifications/azure-fundamentals/"
+        }
+      ],
+      "milestone": "Умение проектировать и реализовывать приложения с использованием Kubernetes и облачных платформ AWS, Google Cloud, Azure"
+    }
+  },
+  "gap_analysis": {
+    "quick_wins": [
+      "Python",
+      "SQL",
+      "Основы Django",
+      "Основы Flask",
+      "Коммуникативные навыки",
+      "Умение работать в команде"
+    ],
+    "long_term": [
+      "NoSQL",
+      "FastAPI",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "Google Cloud",
+      "Azure"
+    ]
+  },
+  "portfolio_project": {
+    "name": "Онлайн-платформа для управления задачами",
+    "description": "Разработка онлайн-платформы для управления задачами с использованием Python, Django, SQL и Docker. Платформа позволяет пользователям создавать задачи, назначать исполнителей, отслеживать статус выполнения задач. Реализована система аутентификации и авторизации пользователей.",
+    "skills_demonstrated": [
+      "Python",
+      "Django",
+      "SQL",
+      "Docker"
+    ]
+  },
+  "quality_score": 100,
+  "reason_score": "Все навыки из skill_map корректно отражены в learning_path и portfolio_project. Зарплаты в salary_table соответствуют уровню навыков и грейдам. Тренды навыков в skill_map согласуются с learning_path. Soft skills корректно указаны в short-term в gap_analysis и не присутствуют в long_term.",
+  "warnings": [],
+  "is_consistent": true
+}
