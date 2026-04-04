@@ -45,6 +45,12 @@ def call_llm(prompt: str, system_prompt: str) -> str:
     logger.info("LLM: Ответ получен, обрабатываем результат")
 
     # Достаём текст
-    text = result["result"]["alternatives"][0]["message"]["text"].strip("`").strip()
-
-    return json.loads(text)
+    try:
+        text = result["result"]["alternatives"][0]["message"]["text"].strip("`").strip()
+        return json.loads(text)
+    except json.JSONDecodeError as e:
+        logger.error(f"[ERROR] - LLM: Ошибка парсинга JSON - {e}")
+        raise ValueError(f"LLM вернул невалидный JSON - {e}")
+    except (KeyError, IndexError, TypeError) as e:
+        logger.error(f"[ERROR] - LLM: Неожиданная структура ответа - {result}")
+        raise ValueError(f"Не удалось извлечь текст из ответа LLM - {e}")

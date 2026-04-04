@@ -1,4 +1,5 @@
 import argparse
+import sys
 from datetime import datetime
 from agents.market_analyst import MarketAnalyst
 from agents.salary_appraiser import SalaryAppraiser
@@ -56,9 +57,9 @@ def main():
 
         logger.info(f"Main: Отчеты для '{args.role}' сохранены в директорию {report_dir}")
 
-    except Exception as e:
-        logger.error(f"Ошибка: {e}")
-        raise
+    except ValueError as e:
+        logger.error(f"[ERROR] - {e}")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
