@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T01:15:31.479310Z",
+  "generated_at": "2026-04-04T13:42:41.460705Z",
   "skill_map": {
     "languages": [
       {
@@ -10,7 +10,7 @@
       {
         "name": "R",
         "demand": "important",
-        "trend": "declining"
+        "trend": "stable"
       },
       {
         "name": "Julia",
@@ -35,14 +35,14 @@
         "trend": "stable"
       },
       {
-        "name": "XGBoost",
-        "demand": "important",
-        "trend": "stable"
-      },
-      {
         "name": "Keras",
         "demand": "important",
         "trend": "declining"
+      },
+      {
+        "name": "XGBoost",
+        "demand": "important",
+        "trend": "stable"
       }
     ],
     "infrastructure": [
@@ -132,7 +132,7 @@
       "Москва": {
         "min": 130,
         "median": 160,
-        "max": 210
+        "max": 220
       },
       "Регионы РФ": {
         "min": 90,
@@ -148,13 +148,13 @@
     "Senior": {
       "Москва": {
         "min": 200,
-        "median": 250,
-        "max": 320
+        "median": 270,
+        "max": 350
       },
       "Регионы РФ": {
         "min": 150,
-        "median": 220,
-        "max": 280
+        "median": 230,
+        "max": 300
       },
       "Remote USD": {
         "min": 4000,
@@ -164,24 +164,24 @@
     },
     "Lead": {
       "Москва": {
-        "min": 300,
+        "min": 320,
         "median": 420,
         "max": 500
       },
       "Регионы РФ": {
-        "min": 230,
-        "median": 330,
-        "max": 430
+        "min": 240,
+        "median": 360,
+        "max": 450
       },
       "Remote USD": {
         "min": 6500,
-        "median": 8500,
-        "max": 10500
+        "median": 8000,
+        "max": 9500
       }
     }
   },
   "market_trend": "stable",
-  "market_trend_reason": "Спрос на специалистов в области машинного обучения и анализа данных остаётся стабильным, так как компании продолжают инвестировать в развитие этих направлений.",
+  "market_trend_reason": "Спрос на специалистов в области машинного обучения и анализа данных остаётся стабильным, так как компании продолжают инвестировать в развитие своих аналитических возможностей.",
   "top_employers": [
     "Яндекс",
     "Сбер",
@@ -195,8 +195,7 @@
         "Python",
         "TensorFlow",
         "PyTorch",
-        "Scikit-learn",
-        "Docker"
+        "Scikit-learn"
       ],
       "resources": [
         {
@@ -205,24 +204,50 @@
           "url": "https://stepik.org/course/512"
         },
         {
-          "title": "Deep Learning Specialization",
+          "title": "Deep Learning specialization",
           "type": "курс",
           "url": "https://www.coursera.org/specializations/deep-learning"
         },
         {
-          "title": "Практическое машинное обучение с Scikit-Learn и TensorFlow",
+          "title": "TensorFlow: Практическое введение",
           "type": "книга",
-          "url": "https://www.litres.ru/book/oreilly-media-3618/prakticheskoe-mashinnoe-obuchenie-s-scikit-learn-i-tensorflow-6886785/"
+          "url": "https://www.tensorflow.org/resources/learn-ml-pipelines"
         }
       ],
-      "milestone": "Умение писать простые программы на Python, понимание основ машинного обучения и нейронных сетей, умение работать с Docker"
+      "milestone": "Умение писать простые программы на Python, понимание основ машинного обучения и нейронных сетей, работа с TensorFlow и PyTorch"
     },
     "Practice": {
       "topics": [
+        "Docker",
+        "Kubernetes",
+        "AWS",
+        "MLflow"
+      ],
+      "resources": [
+        {
+          "title": "Docker: с нуля до героя",
+          "type": "курс",
+          "url": "https://skillbox.ru/media/code/docker_s_nulya_do_geroya/"
+        },
+        {
+          "title": "Kubernetes in Action",
+          "type": "книга",
+          "url": "https://www.manning.com/books/kubernetes-in-action"
+        },
+        {
+          "title": "AWS Certified Solutions Architect – Associate",
+          "type": "курс",
+          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+        }
+      ],
+      "milestone": "Умение работать с Docker и Kubernetes, развертывание моделей машинного обучения на AWS, использование MLflow для отслеживания экспериментов"
+    },
+    "Portfolio": {
+      "topics": [
         "XGBoost",
         "Keras",
-        "Kubernetes",
-        "AWS"
+        "GCP",
+        "Azure"
       ],
       "resources": [
         {
@@ -236,73 +261,48 @@
           "url": "https://keras.io/"
         },
         {
-          "title": "Kubernetes: Up and Running",
-          "type": "книга",
-          "url": "https://www.oreilly.com/library/view/kubernetes-up-and/9781492032550/"
-        },
-        {
-          "title": "AWS Certified Solutions Architect – Associate",
+          "title": "Google Cloud Platform: Machine Learning",
           "type": "курс",
-          "url": "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+          "url": "https://cloud.google.com/learn/machine-learning"
         }
       ],
-      "milestone": "Умение применять XGBoost и Keras для решения задач машинного обучения, умение работать с Kubernetes и AWS"
-    },
-    "Portfolio": {
-      "topics": [
-        "MLflow",
-        "Databricks"
-      ],
-      "resources": [
-        {
-          "title": "MLflow: Open Source Platform for the Machine Learning Lifecycle",
-          "type": "документация",
-          "url": "https://mlflow.org/"
-        },
-        {
-          "title": "Databricks Documentation",
-          "type": "документация",
-          "url": "https://docs.databricks.com/"
-        }
-      ],
-      "milestone": "Умение использовать MLflow для отслеживания экспериментов и Databricks для работы с большими данными"
+      "milestone": "Создание проекта по машинному обучению с использованием XGBoost и Keras, развертывание модели на GCP или Azure"
     }
   },
   "gap_analysis": {
     "quick_wins": [
       "Python",
+      "TensorFlow",
+      "PyTorch",
       "Scikit-learn",
       "Docker",
+      "AWS",
       "Коммуникабельность",
       "Умение работать в команде"
     ],
     "long_term": [
-      "TensorFlow",
-      "PyTorch",
-      "XGBoost",
       "Kubernetes",
-      "AWS",
-      "MLflow"
+      "MLflow",
+      "GCP",
+      "Azure",
+      "Проблемное мышление",
+      "Способность к самообучению"
     ]
   },
   "portfolio_project": {
-    "name": "Система рекомендаций на основе машинного обучения",
-    "description": "Разработка системы рекомендаций для интернет-магазина, которая использует алгоритмы машинного обучения для анализа поведения пользователей и предложения им товаров, соответствующих их интересам.",
+    "name": "Система прогнозирования оттока клиентов",
+    "description": "Разработка системы прогнозирования оттока клиентов на основе исторических данных о поведении клиентов. Использование XGBoost для построения модели, Keras для создания нейронной сети, развертывание модели на GCP.",
     "skills_demonstrated": [
       "Python",
-      "TensorFlow",
-      "PyTorch",
-      "Scikit-learn",
       "XGBoost",
-      "Docker",
-      "Kubernetes",
-      "AWS"
+      "Keras",
+      "GCP"
     ]
   },
   "quality_score": 90,
-  "reason_score": "В целом план обучения и карьерный план хорошо структурированы и соответствуют навыкам и трендам. Однако в разделе 'Practice' упоминается Keras, тренд которого 'declining', что не соответствует рекомендациям.",
+  "reason_score": "В целом план обучения и карьерный план хорошо структурированы и соответствуют текущим трендам рынка. Однако в разделе long_term присутствуют soft skills, что не соответствует требованиям (soft skills должны быть исключены из этого раздела).",
   "warnings": [
-    "В learning_path в разделе 'Practice' упоминается Keras, который имеет тренд 'declining'. Рекомендуется исключить его или заменить на более перспективную технологию."
+    "В разделе long_term присутствуют soft skills: 'Проблемное мышление' и 'Способность к самообучению', что не соответствует требованиям."
   ],
   "is_consistent": true
 }

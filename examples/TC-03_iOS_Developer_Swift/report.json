@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T02:44:13.677226Z",
+  "generated_at": "2026-04-04T13:48:32.123526Z",
   "skill_map": {
     "languages": [
       {
@@ -37,14 +37,14 @@
         "trend": "stable"
       },
       {
-        "name": "Cocoapods",
+        "name": "CocoaPods",
         "demand": "important",
         "trend": "stable"
       },
       {
-        "name": "Carthage",
-        "demand": "nice-to-have",
-        "trend": "declining"
+        "name": "Firebase",
+        "demand": "important",
+        "trend": "growing"
       },
       {
         "name": "Git",
@@ -54,24 +54,29 @@
     ],
     "soft_skills": [
       {
-        "name": "Коммуникативные навыки",
+        "name": "Коммуникабельность",
         "demand": "important",
         "trend": "stable"
       },
       {
         "name": "Умение работать в команде",
-        "demand": "important",
+        "demand": "critical",
         "trend": "stable"
       },
       {
-        "name": "Проблемное мышление",
+        "name": "Проактивность",
         "demand": "important",
-        "trend": "stable"
+        "trend": "growing"
       },
       {
-        "name": "Самообучение",
+        "name": "Способность к самообучению",
         "demand": "critical",
         "trend": "growing"
+      },
+      {
+        "name": "Аналитическое мышление",
+        "demand": "important",
+        "trend": "stable"
       }
     ]
   },
@@ -85,7 +90,7 @@
       "Регионы РФ": {
         "min": 60,
         "median": 85,
-        "max": 110
+        "max": 95
       },
       "Remote USD": {
         "min": 1500,
@@ -97,12 +102,12 @@
       "Москва": {
         "min": 130,
         "median": 160,
-        "max": 210
+        "max": 200
       },
       "Регионы РФ": {
         "min": 90,
         "median": 140,
-        "max": 180
+        "max": 170
       },
       "Remote USD": {
         "min": 2500,
@@ -112,14 +117,14 @@
     },
     "Senior": {
       "Москва": {
-        "min": 200,
-        "median": 250,
-        "max": 320
+        "min": 220,
+        "median": 280,
+        "max": 350
       },
       "Регионы РФ": {
-        "min": 150,
-        "median": 220,
-        "max": 280
+        "min": 180,
+        "median": 240,
+        "max": 300
       },
       "Remote USD": {
         "min": 4000,
@@ -129,30 +134,30 @@
     },
     "Lead": {
       "Москва": {
-        "min": 300,
+        "min": 320,
         "median": 420,
         "max": 500
       },
       "Регионы РФ": {
-        "min": 230,
-        "median": 330,
-        "max": 430
+        "min": 260,
+        "median": 360,
+        "max": 440
       },
       "Remote USD": {
-        "min": 6500,
-        "median": 8500,
-        "max": 10500
+        "min": 5800,
+        "median": 7500,
+        "max": 9200
       }
     }
   },
   "market_trend": "growing",
-  "market_trend_reason": "Спрос на разработчиков под iOS растёт из-за увеличения числа мобильных приложений и необходимости их поддержки и развития.",
+  "market_trend_reason": "Спрос на разработчиков мобильных приложений под iOS растёт из-за увеличения числа пользователей смартфонов и востребованности мобильных приложений.",
   "top_employers": [
     "Яндекс",
     "Сбер",
+    "Тинькофф",
     "Mail.ru Group",
-    "Rambler Group",
-    "Тинькофф"
+    "Rambler Group"
   ],
   "learning_path": {
     "Foundation": {
@@ -169,9 +174,9 @@
           "url": "https://docs.swift.org/swift-book/"
         },
         {
-          "title": "iOS Basics from Apple",
+          "title": "Learn Git in 20 Minutes",
           "type": "курс",
-          "url": "https://developer.apple.com/tutorials/swiftui"
+          "url": "https://www.youtube.com/watch?v=RGOj5yH7iWc"
         },
         {
           "title": "Xcode User Guide",
@@ -179,13 +184,13 @@
           "url": "https://developer.apple.com/library/archive/documentation/IDEs/Conceptual/xcode_overview/index.html"
         }
       ],
-      "milestone": "Понимание основ языка Swift, умение работать с UIKit, настройка рабочей среды в Xcode, базовые навыки работы с Git"
+      "milestone": "Умение создавать простые приложения на Swift с использованием UIKit в Xcode, а также работать с системой контроля версий Git"
     },
     "Practice": {
       "topics": [
         "SwiftUI",
         "Combine",
-        "Cocoapods"
+        "Firebase"
       ],
       "resources": [
         {
@@ -199,31 +204,31 @@
           "url": "https://www.hackingwithswift.com/books/ios-swiftui/combine"
         },
         {
-          "title": "Cocoapods Official Documentation",
+          "title": "Firebase Documentation",
           "type": "документация",
-          "url": "https://cocoapods.org/"
+          "url": "https://firebase.google.com/docs"
         }
       ],
-      "milestone": "Умение создавать приложения с использованием SwiftUI, работа с Combine для асинхронного программирования, интеграция сторонних библиотек через Cocoapods"
+      "milestone": "Умение разрабатывать приложения с использованием SwiftUI и Combine, интегрировать Firebase для добавления функциональности"
     },
     "Portfolio": {
       "topics": [
         "Objective-C",
-        "Git"
+        "CocoaPods"
       ],
       "resources": [
         {
           "title": "Programming in Objective-C",
           "type": "книга",
-          "url": "https://www.amazon.com/Programming-Objective-C-Stephen-G-Kochan/dp/0134679356"
+          "url": "https://www.amazon.com/Programming-Objective-C-Stephen-G-Kochan/dp/0134671097"
         },
         {
-          "title": "Pro Git",
-          "type": "книга",
-          "url": "https://git-scm.com/book/en/v2"
+          "title": "CocoaPods Guide",
+          "type": "документация",
+          "url": "https://guides.cocoapods.org/"
         }
       ],
-      "milestone": "Разработка полноценного приложения на Swift с использованием UIKit или SwiftUI, демонстрация навыков работы с Git и версиями проектов"
+      "milestone": "Создание портфолио-проекта, демонстрирующего навыки работы с Objective-C и использование CocoaPods для управления зависимостями"
     }
   },
   "gap_analysis": {
@@ -231,30 +236,31 @@
       "Swift",
       "Xcode",
       "Git",
-      "Коммуникативные навыки",
+      "Коммуникабельность",
       "Умение работать в команде"
     ],
     "long_term": [
       "UIKit",
       "SwiftUI",
       "Combine",
-      "Cocoapods"
+      "Firebase",
+      "CocoaPods"
     ]
   },
   "portfolio_project": {
-    "name": "iOS Weather App",
-    "description": "Разработка приложения для отображения погоды с использованием API OpenWeatherMap. Приложение использует SwiftUI для интерфейса и Combine для обработки асинхронных данных. Реализована интеграция с Git для управления версиями проекта.",
+    "name": "iOS приложение для отслеживания привычек",
+    "description": "Приложение позволяет пользователям отслеживать свои ежедневные привычки, устанавливать цели и получать уведомления. Реализовано с использованием SwiftUI для интерфейса, Combine для обработки потоков данных и Firebase для сохранения данных пользователя.",
     "skills_demonstrated": [
       "Swift",
       "SwiftUI",
       "Combine",
-      "Git"
+      "Firebase"
     ]
   },
   "quality_score": 90,
-  "reason_score": "План обучения и карьерный план в целом хорошо структурированы и соответствуют навыкам из skill_map. Однако в разделе Portfolio в learning_path упоминается Objective-C, который имеет тренд declining и не рекомендуется для изучения.",
+  "reason_score": "План обучения и карьерный план в целом хорошо структурированы и соответствуют текущим трендам рынка. Однако в разделе Portfolio предлагается изучение Objective-C, который имеет тренд declining, что может быть не самым оптимальным выбором для долгосрочного развития.",
   "warnings": [
-    "В разделе Portfolio в learning_path упоминается Objective-C, который имеет тренд declining и не рекомендуется для изучения."
+    "В разделе Portfolio предлагается изучение Objective-C, несмотря на его тренд declining."
   ],
   "is_consistent": true
 }
